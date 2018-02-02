@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.vg.service.AuthService;
+import com.vg.jwt.service.AuthService;
 
 @ComponentScan("com.vg")
 @RestController

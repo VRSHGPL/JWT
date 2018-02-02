@@ -1,4 +1,4 @@
-package com.vg.service;
+package com.vg.jwt.service;
 
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;

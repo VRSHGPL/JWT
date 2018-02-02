@@ -1,4 +1,4 @@
-package com.vg.service;
+package com.vg.jwt.service;
 
 import java.lang.reflect.Field;
 import java.security.NoSuchAlgorithmException;
@@ -28,12 +28,12 @@ import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 
 @Service
-public class JWEToken {
+public class JweToken {
 
     /** private static SecretKey secretKey; **/
     private static final long EXPIRATIONTIME = 1;
     /** private static final long EXPIRATIONTIME = 864_000_00; */
-    private static final Logger LOGGER = LoggerFactory.getLogger(JWEToken.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(JweToken.class);
 
     static {
         KeyGenerator keyGen;

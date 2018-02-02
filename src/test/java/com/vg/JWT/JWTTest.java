@@ -1,4 +1,4 @@
-package com.vg.JWT;
+package com.vg.jwt;
 
 import java.lang.reflect.Field;
 import java.security.NoSuchAlgorithmException;
@@ -38,21 +38,21 @@ import com.nimbusds.jose.crypto.DirectEncrypter;
 import com.nimbusds.jose.crypto.MACSigner;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
-import com.vg.service.JWEToken;
+import com.vg.jwt.service.JweToken;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class JWTTest {
+public class JwtTest {
     private RestTemplate restTemplate = new RestTemplate();
     String uri = "http://localhost:8080/auth";
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(JWTTest.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(JwtTest.class);
 
     @Rule
     public ExpectedException thrown = ExpectedException.none();
 
     @Autowired
-    private JWEToken jweToken;
+    private JweToken jweToken;
 
     @Test
     public void callEPPositive() {
